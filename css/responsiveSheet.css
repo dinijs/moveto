@@ -1,0 +1,51 @@
+@element 'h1' and (min-characters: 27) and (max-characters: 50) and (max-width: 375px) {
+  h1 {
+    line-height: 2rem;
+  }
+  .header {
+    height: 4.5rem;
+  }
+  .home {
+    margin: 1.25em 0.5em 1.25em 1.5em;
+  }
+}
+@element 'h1' and (min-characters: 54) and (max-width: 600px) {
+  h1 {
+    line-height: 1.3333rem !important;
+    font-size: 1.3333em;
+    padding-top: 0.25rem;
+  }
+  .header {
+    height: 5rem;
+  }
+  .home {
+    margin: 1.5em 0.5em 1.5em 1.5em;
+  }
+}
+@element 'h1' and (min-characters: 38) and (max-width: 650px) {
+  h1 {
+    line-height: 2rem;
+  }
+  .header {
+    height: 4.5rem;
+  }
+  .home {
+    margin: 1.25em 0.5em 1.25em 1.5em;
+  }
+}
+@element 'h1' and (min-characters: 57) and (max-width: 700px) {
+  h1 {
+    line-height: 2rem;
+  }
+  .header {
+    height: 4.5rem;
+  }
+  .home {
+    margin: 1.25em 0.5em 1.25em 1.5em;
+  }
+}
+@element 'h1' and (min-characters: 79) and (max-width: 1100px) {
+  h1 {
+    line-height: 2rem;
+  }
+}
