@@ -11,7 +11,7 @@
 }
 @element 'h1' and (min-characters: 54) and (max-width: 600px) {
   h1 {
-    line-height: 1.3333rem !important;
+    line-height: 1.3333rem;
     font-size: 1.3333em;
     padding-top: 0.25rem;
   }
