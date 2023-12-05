@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countries</title>
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <script type="text/javascript" src="js/external.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179961099-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179961099-1');
+    </script>
+</head>
+<body onload='world()'>
+  <div class="header">
+    <a href="index.html"><svg class="home" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/></svg></a>
+    <h1>Countries</h1>
+    <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search">
+  </div>
+
+  <div class="text">
+    <h2>Where are you from?</h2>
+  </div>
+
+  <div class="choices">
+    <ul id="myUL">
+      <li><a href='categories.html' onclick='embassy180(); pass0();'>Afghanistan</a></li>
+      <li><a href='pass1.html' onclick='embassy190()'>Albania</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Algeria</a></li>
+      <li><a href='categories.html' onclick='embassy150(); pass5();'>Andorra</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Angola</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Antigua and Barbuda</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Argentina</a></li>
+      <li><a href='categories.html' onclick='embassy70(); pass0();'>Armenia</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Australia</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Austria</a></li>
+      <li><a href='categories.html' onclick='embassy30(); pass0();'>Azerbaijan</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Bahamas</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass0();'>Bahrain</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>Bangladesh</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Barbados</a></li>
+      <!-- change here -->
+      <li><a href='belarus.html'>Belarus</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Belgium</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Belize</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Benin</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Bhutan</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Bolivia</a></li>
+      <li><a href='pass1.html' onclick='embassy190()'>Bosnia and Herzegovina</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Botswana</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Brazil</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass5();'>Brunei</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Bulgaria</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Burkina Faso</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Burundi</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Cambodia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Cameroon</a></li>
+      <li><a href='categories.html' onclick='embassy110(); pass5(); canada();'>Canada</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Cape Verde</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Central African Republic</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Chad</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Chile</a></li>
+      <!-- change here -->
+      <li><a href='china.html'>China</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Colombia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Comoros</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Costa Rica</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Croatia</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Cuba</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass4();'>Cyprus</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Czech Republic</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Democratic Republic of the Congo</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass4();'>Denmark</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Djibouti</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Dominica</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Dominican Republic</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>East Timor</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Ecuador</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Egypt</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>El Salvador</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Equatorial Guinea</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Eritrea</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass4();'>Estonia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Eswatini</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Ethiopia</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass0();'>Fiji</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass4();'>Finland</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>France</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Gabon</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Gambia</a></li>
+      <li><a href='pass1.html' onclick='embassy70()'>Georgia</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Germany</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Ghana</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Greece</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Grenada</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Guatemala</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Guinea</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Guinea-Bissau</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Guyana</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Haiti</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Honduras</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Hungary</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass5();'>Iceland</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>India</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Indonesia</a></li>
+      <li><a href='categories.html' onclick='embassy190(); pass0();'>Iran</a></li>
+      <li><a href='categories.html' onclick='embassy190(); pass0();'>Iraq</a></li>
+      <li><a href='categories.html' onclick='embassy150(); pass4();'>Ireland</a></li>
+      <li><a href='categories.html' onclick='embassy90(); pass5();'>Israel</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Italy</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Ivory Coast</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Jamaica</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Japan</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Jordan</a></li>
+      <li><a href='categories.html' onclick='embassy120(); pass0();'>Kazahkstan</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Kenya</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Kiribati</a></li>
+      <li><a href='categories.html' onclick='embassy190(); pass0();'>Kosovo</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass0();'>Kuwait</a></li>
+      <li><a href='categories.html' onclick='embassy120(); pass0();'>Kyrgyzstan</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Laos</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Lebanon</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Lesotho</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Liberia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Libya</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass5();'>Liechtenstein</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Lithuania</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Luxembourg</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Madagascar</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Malawi</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass5();'>Malaysia</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>Maldives</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Mali</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Malta</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Marshall Islands</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Mauritania</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass5();'>Mauritius</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Mexico</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Micronesia</a></li>
+      <li><a href='pass1.html' onclick='embassy170()'>Moldova</a></li>
+      <li><a href='categories.html' onclick='embassy150(); pass5();'>Monaco</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Mongolia</a></li>
+      <li><a href='pass1.html' onclick='embassy190()'>Montenegro</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Morocco</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Mozambique</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>Myanmar</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Namibia</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass0();'>Nauru</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>Nepal</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Netherlands</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5(); newzealand();'>New Zealand</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Nicaragua</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Niger</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Nigeria</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>North Korea</a></li>
+      <li><a href='pass1.html' onclick='embassy190()'>North Macedonia</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass5();'>Norway</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass0();'>Oman</a></li>
+      <li><a href='categories.html' onclick='embassy180(); pass0();'>Pakistan</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Palau</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Panama</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass0();'>Papua New Guinea</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Paraguay</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Peru</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass0();'>Philippines</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Poland</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Portugal</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass0();'>Qatar</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Republic of the Congo</a></li>
+      <li><a href='categories.html' onclick='embassy170(); pass4();'>Romania</a></li>
+      <!-- change here -->
+      <li><a href='russia.html'>Russia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Rwanda</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Saint Kitts and Nevis</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Saint Lucia</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Saint Vincent and the Grenadines</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Samoa</a></li>
+      <li><a href='categories.html' onclick='embassy150(); pass5();'>San Marino</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Sao Tome and Principe</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass0();'>Saudi Arabia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Senegal</a></li>
+      <li><a href='pass3.html' onclick='embassy190()'>Serbia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass5();'>Seychelles</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Sierra Leone</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass5();'>Singapore</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Slovakia</a></li>
+      <li><a href='categories.html' onclick='embassy160(); pass4();'>Slovenia</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Solomon Islands</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Somalia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>South Africa</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>South Korea</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>South Sudan</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass4();'>Spain</a></li>
+      <li><a href='categories.html' onclick='embassy80(); pass0();'>Sri Lanka</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Sudan</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass0();'>Suriname</a></li>
+      <li><a href='categories.html' onclick='embassy200(); pass4();'>Sweden</a></li>
+      <li><a href='categories.html' onclick='embassy60(); pass5();'>Switzerland</a></li>
+      <li><a href='categories.html' onclick='embassy190(); pass0();'>Syria</a></li>
+      <li><a href='categories.html' onclick='embassy120(); pass0();'>Tajikistan</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Tanzania</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Thailand</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Togo</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Tonga</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Trinidad and Tobago</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Tunisia</a></li>
+      <li><a href='categories.html' onclick='embassy190(); pass0();'>Turkey</a></li>
+      <li><a href='categories.html' onclick='embassy180(); pass0();'>Turkmenistan</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Tuvalu</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Uganda</a></li>
+      <li><a href='pass1.html' onclick='embassy170()'>Ukraine</a></li>
+      <li><a href='categories.html' onclick='embassy20(); pass5();'>United Arab Emirates</a></li>
+      <li><a href='categories.html' onclick='embassy150(); pass5();'>United Kingdom</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>United States of America</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Uruguay</a></li>
+      <li><a href='categories.html' onclick='embassy180(); pass0();'>Uzbekistan</a></li>
+      <li><a href='categories.html' onclick='embassy100(); pass5();'>Vanuatu</a></li>
+      <li><a href='categories.html' onclick='embassy0(); pass5();'>Vatican</a></li>
+      <li><a href='categories.html' onclick='embassy10(); pass5();'>Venezuela</a></li>
+      <li><a href='categories.html' onclick='embassy140(); pass0();'>Vietnam</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Yemen</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Zambia</a></li>
+      <li><a href='categories.html' onclick='embassy50(); pass0();'>Zimbabwe</a></li>
+    </ul>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* @font-face {
+  font-family: "Aladin";
+  src: url("../fonts/Aladin-Regular.ttf") format("truetype");
+} */
+
+
+
+/* Document level adjustments */
+html {
+  font-size: 16px;
+}
+
+
+/* Modules will scale with document */
+.header {
+  font-size: 1rem;
+  background-color: #BAC1D9;
+  height: 4rem;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+}
+
+.text {
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+
+.choices {
+  margin-top: 3.6rem;
+  font-size: 1.5rem;
+}
+
+
+a, h1, h2, p, li {
+  font-family: Roboto, Arial;
+  color: #061338;
+}
+
+
+h2, p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body {
+  background-color: #F3F5F8;
+  margin: 0 0 5% 0;
+}
+
+
+.start {
+  color: white;
+  background-color: #1E3883;
+  font-size: 20pt;
+  line-height: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 20pt;
+  margin: 25% 22.5%;
+}
+
+
+#search {
+  background-image: url('../img/search.png');
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.6rem;
+  top: 0.8rem;
+  position: fixed;
+  padding: 0pt 0pt 0pt 25pt;
+  font-size: 1em;
+  display: block;
+  border-width: 0.01pt;
+  border-color: black;
+  width: 20%;
+  margin: 0pt 3% 0pt 75%;
+  border-radius: 50pt;
+  line-height: 2.4rem;
+}
+
+
+div.choices ul, div.choices li  {
+  list-style-type: none;
+}
+
+
+div.choices a {
+  display: block;
+  text-decoration: none;
+  padding: 0.6em;
+  color: white;
+  background-color: #1E3883;
+  margin: 1.1em 22.5% 0pt 22.5%;
+  min-width: 120pt;
+  text-align: center;
+  border-radius: 5pt;
+}
+
+p, details {
+  font-size: 1.35em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+h1 {
+  font-size: 1.6em;
+  margin: 0;
+  margin-right: 2em;
+  text-align: center;
+  line-height: 4rem;
+}
+
+#fullname {
+  font-style: italic;
+  color: grey;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.home {
+  float: left;
+  display: inline;
+  margin: 1em 0.5em 1em 1.5em;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  background-color: #1E3883;
+  padding: 0 0.5% 0 0.5%;
+  font-weight: normal;
+}
+
+#canada {
+  color: white;
+  background-color: orange;
+  display: none;
+}
+
+#newzealand {
+  color: white;
+  background-color: orange;
+  display: none;
+}
+
+#myUL {
+  padding: 0;
+}
+
+/* Resposive CSS */
+@media (max-width: 1400px) {
+  h2, details { margin: 5% 3% 1.4%; }
+  p { margin: 1.6% 3%; }
+  .link { padding: 0 1% 0 1%; }
+  .call { margin-bottom: -3%; }
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+  div.choices a { margin: 1.1em 22.5% 0pt 22.5%; }
+  h2, details { margin: 6% 3% 1.4%; }
+  p { margin: 2.2% 3%; }
+  #search { margin: 0pt 3% 0pt 70%; }
+  .link { padding: 0 1% 0 1%; }
+  .call { margin-bottom: -3%; }
+}
+@media (max-width: 500px) {
+  html { font-size: 13px; }
+  div.choices a { margin: 1.1em 15% 0pt 15%; }
+  h2, details { margin: 10% 3% 1.4%; }
+  p { margin: 2.8% 3%; }
+  .link { padding: 0 2% 0 2%; }
+  .call { margin-bottom: -3%; }
+}
